@@ -101,19 +101,21 @@
     }
 
     /* ✅ Mobile Responsive */
-    @media (max-width: 600px) {
-      .expenseContainer,
-      .displayGrid {
-        grid-template-columns: 1fr 1fr;
-      }
-
-      .expenseTracker {
-        width: 90%;
-        padding: 15px;
-      }
-
-      #addTotal {
-        width: 100%;
-        margin-top: 10px;
-      }
+   @media screen and (max-width: 500px) {
+    .expenseContainer {
+        grid-template-columns: 1fr;
     }
+
+    .expenseContainer input,
+    .expenseContainer button {
+        width: 100%;
+    }
+
+    .displayGrid {
+        grid-template-columns: 1fr;
+    }
+
+    #addTotal {
+        width: 100%;
+    }
+}
